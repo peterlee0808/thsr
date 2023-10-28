@@ -1,0 +1,565 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px;
+  position: sticky;
+  background-color: #ffffff;
+}
+.hamburger {
+  width: 30px;
+  height: 30px;
+  background-color: #585455;
+}
+.logo {
+  width: 150px;
+}
+.toggle {
+  width: 30px;
+  height: 30px;
+  background-color: #585455;
+}
+
+.large {
+  display: none;
+}
+
+.large-logo-image {
+  display: none;
+}
+
+.main-nav {
+  display: none;
+}
+
+.breadcrumb {
+  background-color: #585455;
+  padding: 10px 10px;
+}
+.breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: bold;
+}
+
+.narrow::before {
+  content: " > ";
+}
+
+.breadcrumb-container {
+  background-color: #585455;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.print {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.header-title {
+  color: #333333;
+  font-size: 1.75rem;
+  position: relative;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-align: center;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 90px;
+  height: 3px;
+  left: 50%;
+  bottom: 0%;
+  background-color: #ca4f0f;
+  margin-left: -45px;
+}
+
+.header-content p {
+  color: #666666;
+  font-size: 17.6px;
+  line-height: 26.4px;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.hotel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.search-input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 0 0 10px 0;
+  width: 100%;
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hotel-list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.list-item {
+  font-size: 17.6px;
+  font-weight: 300;
+  line-height: 26.4px;
+  padding: 6px 12px;
+  text-align: center;
+  color: #646465;
+  border: 2px solid #eeeeee;
+  background-color: #ffffff;
+}
+
+.area-hotel {
+  font-size: 17.6px;
+  font-weight: 300;
+  line-height: 26.4px;
+  padding: 6px 12px;
+  text-align: center;
+  color: #646465;
+  border: 2px solid #eeeeee;
+  background-color: #ffffff;
+}
+
+.banner-image {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.area-filter {
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: #fefffd;
+}
+
+.area-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  gap: 45px;
+}
+
+.area-list a {
+  max-width: 60%;
+  text-decoration: none;
+  color: black;
+}
+
+.keelong,
+.taipei {
+  text-decoration: none;
+  color: #000000;
+  display: none;
+}
+
+.hsinchu,
+.taichung,
+.nantou,
+.changhua,
+.yunlin,
+.chiayi {
+  text-decoration: none;
+  color: #000000;
+  display: none;
+}
+
+.banner {
+  max-width: 100%;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.project-list li {
+  padding: 10px 10;
+  color: #333333;
+  font-size: 15.2px;
+  line-height: 22.8px;
+  list-style: square;
+}
+
+.project-detail {
+  text-align: center;
+  color: #646465;
+  border: 1px solid #646465;
+  background-color: #ffffff;
+  padding: 10px 10px;
+}
+.hotel-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px;
+  gap: 30px;
+}
+
+.hotel-card {
+  background-color: #f4f4f4;
+}
+
+.hotel-pic img {
+  max-width: 100%;
+}
+
+.hotel-title {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+span {
+  color: #666666;
+  background-color: #f9f9f9;
+  display: inline-block;
+  line-height: 24px;
+  padding: 2px 10px;
+}
+
+.hotel-name {
+  color: #333333;
+  display: inline;
+  font-size: 17.6px;
+  line-height: 21.12px;
+  padding: 3px;
+}
+
+.hotel-season {
+  color: #be4c0e;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  margin: 0 0 16px;
+  padding: 10px 5px;
+}
+
+.hotel-content {
+  display: flex;
+  line-height: 24px;
+  margin: 0 0 16px;
+  color: #666666;
+  padding: 0 5px;
+}
+
+button {
+  width: 100%;
+  background-color: #ca4f0f;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 8px 5px;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .hotel-container {
+    max-width: 100%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .serch-hotel-container {
+    max-width: 30%;
+  }
+  .hotel-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  button {
+    font-size: 16px;
+  }
+  .keelong,
+  .taipei {
+    display: unset;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .print {
+    display: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12.8px;
+    line-height: 19.2px;
+    font-weight: bold;
+  }
+  .hotel-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  button {
+    font-size: 16px;
+  }
+  .hsinchu,
+  .taichung,
+  .nantou,
+  .changhua,
+  .yunlin,
+  .chiayi {
+    display: unset;
+  }
+  .area-list {
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    display: none;
+  }
+  .large {
+    display: unset;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .large-logo-image {
+    display: unset;
+    padding: 30px 0;
+  }
+  .large-logo {
+    width: 210px;
+    height: 84px;
+    padding-left: 20px;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 830px;
+    padding-left: 100px;
+    gap: 50px;
+    margin: 0 auto;
+  }
+  .main-nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 19.2px;
+    line-height: 28.8px;
+  }
+  .assistance-section {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  .language {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #585455;
+  }
+  .area-list {
+    padding: 0 65px;
+  }
+}
